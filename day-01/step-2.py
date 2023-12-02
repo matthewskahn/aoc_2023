@@ -10,7 +10,7 @@ fixits = [
     ["eight", "e8t"]
 ]
 
-numbers = "one|two|three|four|five|six|seven|eight|nine|\d"
+numbers = r"one|two|three|four|five|six|seven|eight|nine|\d"
 num_lkp = {
     "one": 1,
     "two": 2,

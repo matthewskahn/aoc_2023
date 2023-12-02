@@ -6,7 +6,7 @@ matcher = re.compile(pattern)
 
 total = 0
 
-with open('day-02/input.txt', 'r') as f:
+with open('input.txt', 'r') as f:
     lines = [l.strip() for l in f]
 
     for line in lines:
