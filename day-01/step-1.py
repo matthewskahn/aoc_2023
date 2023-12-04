@@ -1,8 +1,9 @@
 import re
+from pathlib import Path
 
 total = 0
 
-with open('input.txt', 'r') as f:
+with open(f'{Path(__file__).resolve().parent}/input.txt', 'r') as f:
     lines = f.readlines()
 
     re = re.compile(r'\d')

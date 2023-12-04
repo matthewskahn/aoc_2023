@@ -1,6 +1,7 @@
 import operator
 import re
 import itertools
+from pathlib import Path
 
 cube_pattern = r"([0-9]+) (red|blue|green)"
 game_pattern = r"Game (\d)"
@@ -9,7 +10,7 @@ game_matcher = re.compile(game_pattern)
 
 total = 0
 
-with open('input.txt', 'r') as f:
+with open(f'{Path(__file__).resolve().parent}/input.txt', 'r') as f:
     lines = [l.strip() for l in f]
 
     for line in lines:

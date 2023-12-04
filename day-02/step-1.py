@@ -1,4 +1,5 @@
 import re
+from pathlib import Path
 
 MAX = {"red": 12, "green": 13, "blue": 14}
 pattern = "([0-9]+) (red|blue|green)"
@@ -6,7 +7,7 @@ matcher = re.compile(pattern)
 
 total = 0
 
-with open('input.txt', 'r') as f:
+with open(f'{Path(__file__).resolve().parent}/input.txt', 'r') as f:
     lines = [l.strip() for l in f]
 
     for line in lines:

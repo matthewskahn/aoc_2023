@@ -1,4 +1,5 @@
 import re
+from pathlib import Path
 
 fixits = [
     ["one", "o1e"], 
@@ -27,7 +28,7 @@ pattern = re.compile(numbers)
 
 total = 0
 
-with open("input.txt", "r") as f:
+with open(f'{Path(__file__).resolve().parent}/input.txt', "r") as f:
     lines = [line.strip() for line in f]
 
     for line in lines:
